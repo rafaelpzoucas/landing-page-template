@@ -15,7 +15,7 @@ export function Cover() {
         <h1 className="text-4xl md:text-7xl font-bold text-primary">
           Lorem ipsum dolor sit
         </h1>
-        <p className="text-muted-foreground md:text-2xl md:max-w-3xl">
+        <p className="text-muted-foreground md:text-xl md:max-w-3xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           quia, placeat harum consectetur eligendi nemo voluptatibus
         </p>
