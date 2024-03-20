@@ -3,7 +3,7 @@ import { metrics } from '@/data/metrics'
 
 export function Metrics() {
   return (
-    <Section>
+    <Section id="metrics">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {metrics.map((metric, index) => (
           <div key={index} className="flex flex-col items-center">

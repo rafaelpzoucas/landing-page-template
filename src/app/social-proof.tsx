@@ -5,7 +5,10 @@ import { testimonials } from '@/data/social-proof'
 
 export function SocialProof() {
   return (
-    <Section className="flex flex-col items-center justify-center gap-16 md:gap-32">
+    <Section
+      id="social-proof"
+      className="flex flex-col items-center justify-center gap-16 md:gap-32"
+    >
       <h1 className="text-2xl md:text-4xl font-bold">
         Depoimentos de clientes
       </h1>

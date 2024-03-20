@@ -5,7 +5,7 @@ import hero from '../../public/hero-image.jpg'
 
 export function Cover() {
   return (
-    <section className="flex items-center justify-center">
+    <section id="cover" className="flex items-center justify-center">
       <div className="fixed w-full h-screen">
         <Image src={hero} alt="" fill className="object-cover opacity-30" />
       </div>

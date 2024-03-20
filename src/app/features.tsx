@@ -4,7 +4,10 @@ import { features } from '@/data/features'
 
 export function Features() {
   return (
-    <Section className="flex flex-col items-center justify-center gap-16 md:gap-32">
+    <Section
+      id="features"
+      className="flex flex-col items-center justify-center gap-16 md:gap-32"
+    >
       <h1 className="text-2xl md:text-4xl font-bold">
         Conheça nossos serviços
       </h1>

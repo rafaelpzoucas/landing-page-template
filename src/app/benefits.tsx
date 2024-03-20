@@ -3,7 +3,10 @@ import { benefits } from '@/data/benefits'
 
 export function Benefits() {
   return (
-    <Section className="flex flex-col items-center justify-center gap-16 md:gap-32">
+    <Section
+      id="benefits"
+      className="flex flex-col items-center justify-center gap-16 md:gap-32"
+    >
       <h1 className="text-2xl md:text-4xl font-bold">
         Por que contratar nossos serviços?
       </h1>
