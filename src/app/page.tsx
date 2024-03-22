@@ -1,8 +1,8 @@
 import { layout } from '@/components/layout'
-import Link from 'next/link'
 import { Articles } from './articles'
 import { Benefits } from './benefits'
 import { CallToAction } from './call-to-action'
+import { Copyright } from './copyright'
 import { Cover } from './cover'
 import { Features } from './features'
 import { Footer } from './footer'
@@ -23,24 +23,7 @@ export default function Home() {
         {layout.articles && <Articles />}
         {layout.social_proof && <SocialProof />}
         {layout.footer && <Footer />}
-        {layout.copyright && (
-          <div className="flex items-center justify-center gap-4 p-4 bg-secondary text-muted-foreground text-sm">
-            <span>
-              Copyright &copy; 2024 - Todos os direitos reservados Advogado
-            </span>
-            <span>|</span>
-            <span>
-              Desenvolvido por{' '}
-              <Link
-                href="https://rafaelzoucas.vercel.app"
-                className="underline"
-                target="_blank"
-              >
-                Rafael Zoucas
-              </Link>
-            </span>
-          </div>
-        )}
+        {layout.copyright && <Copyright />}
       </div>
     </main>
   )
