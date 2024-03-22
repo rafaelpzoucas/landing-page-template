@@ -17,10 +17,10 @@ export function SocialProof() {
           'text-2xl md:text-4xl font-bold uppercase',
         )}
       >
-        Depoimentos de clientes
+        {testimonials.title}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-7xl">
-        {testimonials.map((testimonial, index) => (
+        {testimonials.data.map((testimonial, index) => (
           <Card key={index} className="flex flex-col gap-6 p-6">
             <p className="text-muted-foreground">{testimonial.testimonial}</p>
 

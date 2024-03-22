@@ -20,11 +20,11 @@ export function Articles() {
           'text-2xl md:text-4xl font-bold uppercase',
         )}
       >
-        Artigos
+        {articles.title}
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-7xl">
-        {articles.slice(0, 3).map((article) => (
+        {articles.data.slice(0, 3).map((article) => (
           <Card
             key={article.id}
             className="flex flex-col gap-2 sm:gap-4 overflow-hidden"

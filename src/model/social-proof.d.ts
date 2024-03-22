@@ -1,5 +1,8 @@
 export type SocialProofType = {
-  avatar_url: string
-  name: string
-  testimonial: string
+  title: string
+  data: {
+    avatar_url: string
+    name: string
+    testimonial: string
+  }[]
 }

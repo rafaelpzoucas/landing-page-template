@@ -15,10 +15,10 @@ export function Benefits() {
           'text-2xl md:text-4xl font-bold uppercase',
         )}
       >
-        Por que contratar nossos serviços?
+        {benefits.title}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-7xl">
-        {benefits.map((benefit, index) => (
+        {benefits.data.map((benefit, index) => (
           <div key={index} className="flex flex-col gap-2 sm:gap-4">
             <benefit.icon className="w-10 h-10 text-primary" />
             <strong>{benefit.title}</strong>

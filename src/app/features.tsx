@@ -16,10 +16,10 @@ export function Features() {
           'text-2xl md:text-4xl font-bold uppercase',
         )}
       >
-        Conheça nossos serviços
+        {features.title}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-16 max-w-7xl">
-        {features.map((feature, index) => (
+        {features.data.map((feature, index) => (
           <Card
             key={index}
             className="flex flex-col gap-2 sm:gap-4 p-6 bg-background/30"
