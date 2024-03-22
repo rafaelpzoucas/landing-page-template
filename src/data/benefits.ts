@@ -1,6 +1,7 @@
+import { BenefitType } from '@/model/benefits'
 import { Gavel, Handshake, Heart, Scale, Shield } from 'lucide-react'
 
-export const benefits = [
+export const benefits: BenefitType[] = [
   {
     icon: Shield,
     title: 'Representação Profissional',

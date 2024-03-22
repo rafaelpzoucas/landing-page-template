@@ -1,4 +1,6 @@
-export const metrics = [
+import { MetricType } from '@/model/metrics'
+
+export const metrics: MetricType[] = [
   {
     title: '12k+',
     description: 'Clientes satisfeitos',

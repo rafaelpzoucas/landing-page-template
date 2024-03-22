@@ -1,6 +1,7 @@
+import { FeatureType } from '@/model/features'
 import { ClipboardCheck, FilePenLine, Handshake, Scale } from 'lucide-react'
 
-export const features = [
+export const features: FeatureType[] = [
   {
     icon: Scale,
     title: 'Representação Legal Especializada',

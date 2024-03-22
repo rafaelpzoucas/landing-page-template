@@ -1,4 +1,6 @@
-export const cover = {
+import { CoverType } from '@/model/cover'
+
+export const cover: CoverType = {
   headline: 'Lorem ipsum dolor sit',
   subtitle: 'Lorem ipsum dolor',
   paragraph:

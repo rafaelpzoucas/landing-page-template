@@ -1,7 +1,8 @@
+import { ProfileType } from '@/model/profile'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import logoImg from '../../public/logo.png'
 
-export const profile = {
+export const profile: ProfileType = {
   logo: logoImg,
   name: 'Advogado',
   phone: '55999999999',

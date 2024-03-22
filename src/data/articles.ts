@@ -1,6 +1,7 @@
+import { ArticleType } from '@/model/articles'
 import image from '../../public/hero-image.jpg'
 
-export const articles = [
+export const articles: ArticleType[] = [
   {
     id: 1,
     cover_img: image,
