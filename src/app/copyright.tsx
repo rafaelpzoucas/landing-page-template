@@ -6,11 +6,11 @@ export function Copyright() {
   const year = format(new Date().toISOString(), 'yyyy')
 
   return (
-    <div className="flex items-center justify-center gap-4 p-4 bg-secondary text-muted-foreground text-sm">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4 bg-secondary text-muted-foreground text-sm text-center md:text-left">
       <span>
         Copyright &copy; {year} - Todos os direitos reservados {profile.name}
       </span>
-      <span>|</span>
+      <span className="hidden md:flex opacity-10">|</span>
       <span>
         Desenvolvido por{' '}
         <Link
