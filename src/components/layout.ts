@@ -1,4 +1,13 @@
+import { Inter, Tinos } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+const tinos = Tinos({ weight: ['400', '700'], subsets: ['latin'] })
+
 export const layout = {
+  fonts: {
+    default: inter,
+    highlight: tinos,
+  },
   header: process.env.LAYOUT_HEADER,
   cover: process.env.LAYOUT_COVER,
   metrics: process.env.LAYOUT_METRICS,
