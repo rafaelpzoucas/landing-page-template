@@ -1,7 +1,7 @@
 import { articles } from '@/data/articles'
 
 export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = articles.filter(
+  const article = articles.data.filter(
     (article) => article.id.toString() === params.slug,
   )[0]
   return (
