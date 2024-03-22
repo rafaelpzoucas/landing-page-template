@@ -31,7 +31,13 @@ export default function Home() {
             <span>|</span>
             <span>
               Desenvolvido por{' '}
-              <Link href="rafaelzoucas.vercel.app">Rafael Zoucas</Link>
+              <Link
+                href="https://rafaelzoucas.vercel.app"
+                className="underline"
+                target="_blank"
+              >
+                Rafael Zoucas
+              </Link>
             </span>
           </div>
         )}
