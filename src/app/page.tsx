@@ -1,7 +1,10 @@
+import Link from 'next/link'
+import { Articles } from './articles'
 import { Benefits } from './benefits'
 import { CallToAction } from './call-to-action'
 import { Cover } from './cover'
 import { Features } from './features'
+import { Footer } from './footer'
 import { Header } from './header'
 import { Metrics } from './metrics'
 import { SocialProof } from './social-proof'
@@ -16,7 +19,19 @@ export default function Home() {
         <Features />
         <CallToAction />
         <Benefits />
+        <Articles />
         <SocialProof />
+        <Footer />
+        <div className="flex items-center justify-center gap-4 p-4 bg-secondary text-muted-foreground text-sm">
+          <span>
+            Copyright &copy; 2024 - Todos os direitos reservados Advogado
+          </span>
+          <span>|</span>
+          <span>
+            Desenvolvido por{' '}
+            <Link href="rafaelzoucas.vercel.app">Rafael Zoucas</Link>
+          </span>
+        </div>
       </div>
     </main>
   )
