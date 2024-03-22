@@ -7,32 +7,30 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer className="flex items-center justify-center">
-      <Section>
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl">
-          <div className="flex flex-col gap-6">
-            <div className="flex flex-row items-center gap-2">
-              <Image src={profile.logo} alt="" width={150} height={47} />
-            </div>
+    <Section className="flex items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl">
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-row items-center gap-2">
+            <Image src={profile.logo} alt="" width={150} height={47} />
+          </div>
 
-            <p className="text-muted-foreground">{profile.about}</p>
+          <p className="text-muted-foreground">{profile.about}</p>
 
-            <div className="flex flex-row gap-2">
-              {profile.social.map((social) => (
-                <Link
-                  key={social.name}
-                  href={social.href}
-                  className={cn(
-                    buttonVariants({ variant: 'secondary', size: 'icon' }),
-                  )}
-                >
-                  <social.icon className="text-xl" />
-                </Link>
-              ))}
-            </div>
+          <div className="flex flex-row gap-2">
+            {profile.social.map((social) => (
+              <Link
+                key={social.name}
+                href={social.href}
+                className={cn(
+                  buttonVariants({ variant: 'secondary', size: 'icon' }),
+                )}
+              >
+                <social.icon className="text-xl" />
+              </Link>
+            ))}
           </div>
         </div>
-      </Section>
-    </footer>
+      </div>
+    </Section>
   )
 }

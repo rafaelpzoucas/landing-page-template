@@ -8,7 +8,7 @@ const Section = React.forwardRef<HTMLElement, SectionProps>(
     const Comp = 'section'
     return (
       <Comp
-        className={cn('p-8 md:p-16 py-16 even:bg-secondary', className)}
+        className={cn('p-8 md:p-16 py-16 even:bg-secondary/50', className)}
         ref={ref}
         {...props}
       />
