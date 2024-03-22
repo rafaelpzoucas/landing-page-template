@@ -1,3 +1,4 @@
+import { layout } from '@/components/layout'
 import { Section } from '@/components/section'
 import { buttonVariants } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -13,7 +14,14 @@ export function Articles() {
       id="articles"
       className="flex flex-col items-center justify-center gap-16 md:gap-32"
     >
-      <h1 className="text-2xl md:text-4xl font-bold">Artigos</h1>
+      <h1
+        className={cn(
+          layout.fonts.highlight.className,
+          'text-2xl md:text-4xl font-bold uppercase',
+        )}
+      >
+        Artigos
+      </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-7xl">
         {articles.slice(0, 3).map((article) => (

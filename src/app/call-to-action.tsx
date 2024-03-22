@@ -1,3 +1,4 @@
+import { layout } from '@/components/layout'
 import { Section } from '@/components/section'
 import { buttonVariants } from '@/components/ui/button'
 import { cta } from '@/data/cta'
@@ -13,7 +14,14 @@ export function CallToAction() {
       className="flex flex-col items-center justify-center gap-4 text-center bg-gradient-to-r from-primary via-[#F4E29F] to-[#A0750F] text-primary-foreground"
     >
       <p className="text-muted">{cta.subtitle}</p>
-      <h1 className="text-3xl md:text-5xl font-bold max-w-lg">{cta.title}</h1>
+      <h1
+        className={cn(
+          layout.fonts.highlight.className,
+          'text-3xl md:text-5xl font-bold max-w-lg',
+        )}
+      >
+        {cta.title}
+      </h1>
 
       <Link
         href={action.link}

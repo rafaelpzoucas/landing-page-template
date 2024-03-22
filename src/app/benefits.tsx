@@ -1,5 +1,7 @@
+import { layout } from '@/components/layout'
 import { Section } from '@/components/section'
 import { benefits } from '@/data/benefits'
+import { cn } from '@/lib/utils'
 
 export function Benefits() {
   return (
@@ -7,7 +9,12 @@ export function Benefits() {
       id="benefits"
       className="flex flex-col items-center justify-center gap-16 md:gap-32"
     >
-      <h1 className="text-2xl md:text-4xl font-bold">
+      <h1
+        className={cn(
+          layout.fonts.highlight.className,
+          'text-2xl md:text-4xl font-bold uppercase',
+        )}
+      >
         Por que contratar nossos serviços?
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 max-w-7xl">
