@@ -16,6 +16,7 @@ export const layout = {
   benefits: true,
   articles: true,
   social_proof: true,
+  faq: true,
   footer: true,
   copyright: true,
 }

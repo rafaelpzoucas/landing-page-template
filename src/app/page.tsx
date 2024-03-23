@@ -4,6 +4,7 @@ import { Benefits } from './benefits'
 import { CallToAction } from './call-to-action'
 import { Copyright } from './copyright'
 import { Cover } from './cover'
+import { Faq } from './faq'
 import { Features } from './features'
 import { Footer } from './footer'
 import { Header } from './header'
@@ -22,6 +23,7 @@ export default function Home() {
         {layout.benefits && <Benefits />}
         {layout.articles && <Articles />}
         {layout.social_proof && <SocialProof />}
+        {layout.faq && <Faq />}
         {layout.footer && <Footer />}
         {layout.copyright && <Copyright />}
       </div>
