@@ -8,7 +8,7 @@ export function Copyright() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-4 bg-secondary text-muted-foreground text-sm text-center md:text-left">
       <span>
-        Copyright &copy; {year} - Todos os direitos reservados {profile.name}
+        &copy; {profile.name} {year} - Todos os direitos reservados
       </span>
       <span className="hidden md:flex opacity-10">|</span>
       <span>
