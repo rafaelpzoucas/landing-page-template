@@ -6,6 +6,8 @@ export type ProfileType = {
   logo: StaticImageData
   name: string
   phone: string
+  email: string
+  address: string
   role: string
   about: string
   social: {
