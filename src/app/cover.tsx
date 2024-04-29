@@ -2,14 +2,13 @@ import Image from 'next/image'
 
 import { layout } from '@/components/layout'
 import { buttonVariants } from '@/components/ui/button'
-import { cover } from '@/data/cover'
 import { cta } from '@/data/cta'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import hero from '../../public/hero-image.jpg'
 
 export function Cover() {
-  const action = cta.actions[0]
+  const action = cta.actions.whatsapp
 
   return (
     <section id="cover" className="flex items-center justify-center">
@@ -18,17 +17,18 @@ export function Cover() {
       </div>
 
       <aside className="relative z-10 w-full md:max-w-5xl h-screen flex flex-col items-center justify-center text-center gap-4 md:gap-8 p-8">
-        <span>{cover.subtitle}</span>
+        <span>Lorem ipsum dolor</span>
         <h1
           className={cn(
             layout.fonts.highlight.className,
             'text-4xl md:text-7xl font-bold text-primary uppercase',
           )}
         >
-          {cover.headline}
+          LOREM IPSUM DOLOR SIT
         </h1>
         <p className="text-muted-foreground md:text-xl md:max-w-3xl">
-          {cover.paragraph}
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          quia, placeat harum consectetur eligendi nemo voluptatibus
         </p>
 
         <Link

@@ -6,21 +6,21 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
 export function CallToAction() {
-  const action = cta.actions[0]
+  const action = cta.actions.whatsapp
 
   return (
     <Section
       id="cta"
       className="flex flex-col items-center justify-center gap-4 text-center bg-gradient-to-r from-primary via-[#F4E29F] to-[#A0750F] text-primary-foreground"
     >
-      <p className="text-muted">{cta.subtitle}</p>
+      <p className="text-muted">Entre em contato</p>
       <h1
         className={cn(
           layout.fonts.highlight.className,
           'text-3xl md:text-5xl font-bold max-w-lg',
         )}
       >
-        {cta.title}
+        Agende uma reunião para discutir o seu caso.
       </h1>
 
       <Link
